@@ -1,2 +1,2 @@
 # BackendProgramming
-For Monseu MInimarket Inventory
+For Monseu Minimarket Inventory

@@ -3,6 +3,7 @@ const { MongoClient } = require("mongodb");
 const dbURL = "mongodb://localhost:27017/monseu";
 const dbName = "inventory";
 
+// Function untuk mencari data
 async function findData() {
     try {
         const client = await MongoClient.connect(dbURL);
@@ -19,5 +20,5 @@ async function findData() {
     }
 }
 
-// Call function to find data
+// Memanggil function untuk mencari data
 findData();

@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.get('/login',m(req, res) => {
+router.get('/login', (req, res) => {
     if(req.session.user) {
         res.redirect('/');
     }
@@ -10,7 +10,7 @@ router.get('/login',m(req, res) => {
     }
 });
 
-router.post("login', async function (req, res) {
+router.post('/login', async function (req, res) {
     const username = req.body.username;
     const password = req.body.password;
 

@@ -12,11 +12,11 @@ async function insertData() {
         // Memasukkan data ke "inventory" collection 
         const newData= await db.collection("inventory")
             .insertOne({
-                name: "Indomie Ayam Bawang",
-                description: "Mie instan dengan rasa ayam bawang.",
-                price: 4000,
-                stock: 12345,
-                isavailable: true
+                nama_barang: "Indomie Ayam Bawang",
+                deskripsi: "Mie instan dengan rasa ayam bawang.",
+                harga: 4000,
+                jumlah: 12345,
+                ketersediaan: true
             }, (error, db) => {
                 if (error) throw error;
                 console.log(db)

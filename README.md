@@ -1,5 +1,8 @@
 # MONSEU'S MINIMARKET INVENTORY PROJECT PROGRESS
-Berikut adalah laporan mengenai perkembangan pengerjaan projek kami per-tanggal **24 Maret 2025.**
+* 535240097 Brenda Anastasya
+535240125 Kathleen Klavinka Kurniawan
+535240127 Happy Calista
+* Berikut adalah laporan mengenai perkembangan pengerjaan projek kami per-tanggal **24 Maret 2025.**
 
 ## EJS
 Kami telah membuat EJS untuk halaman log in seperti berikut.

@@ -10,6 +10,7 @@ db.once("open", () => {
 
 const produk = require("../models/Stock");
 
+// Function Update
 async function updateInventory() {
     try {
         // Melakukan pembaruan data

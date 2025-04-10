@@ -9,6 +9,7 @@ db.once("open", () => {
     console.log("Successfully connected to MongoDB using Mongoose!");
 });
 
+// Function CREATE
 async function createInventory() {
     try {
         var produk = new Inventory({

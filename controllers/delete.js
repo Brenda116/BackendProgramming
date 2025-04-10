@@ -10,6 +10,7 @@ db.once("open", () => {
 
 const produk = require("../models/Stock");
 
+// Function DELETE
 async function deleteInventory () {
     try {
         // Menghapus produk

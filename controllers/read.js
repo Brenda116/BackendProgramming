@@ -10,6 +10,7 @@ db.once("open", () => {
 
 const produk = require("../models/Stock");
 
+// Function READ 
 async function readData() {
     try {
         // Cari satu produk berdasarkan nama_barang

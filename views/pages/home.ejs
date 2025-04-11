@@ -9,22 +9,148 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
         integrity="sha384TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #F8F9FA;
-            font-family: Arial, sans-serif;
+            background-color: #B99BC0;
+            font-family: 'Quicksand';
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .container {
-            margin-top: 50px;
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            height: 800px;
+            width: 500px;
+            padding-left: 18px;
+            padding-right: 12px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 1px solid #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+
+        .card-header {
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #FFFFFF;
+        }
+
+        .card-body {
+            flex: 1;
+            overflow: auto;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .card-footer {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #FFFFFF;
+        }
+
+        .button-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .button-group .btn-home {
+            background-color: #36007D;
+            color: #FFFFFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .button-group .btn-stock {
+            margin-left: 23px;
+            margin-right: 15px;
+            color: #000;
+        }
+
+        .btn-succes {
+            background-color: #36007D;
+            border-color: #36007D;
+            color: #FFFFFF;
+            margin-top: 10px;
+            padding: 10px 15px;
+        }
+
+        .btn-succes:hover {
+            background-color: #8263AA;
+            border-color: #8263AA;
+        }
+
+        .card-body::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        .card-body::-webkit-scrollbar-track {
+            background: #ECDDFF;
+        }
+
+        .card-body::-webkit-scrollbar-thumb {
+            background-color: #D5B4FF;
+            border-radius: 10px;
+        }
+
+        .card-body::-webkit-scrollbar-thumb:hover {
+            background-color: #8774A0;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        h1 {
+            font-family: 'Noto Serif';
+            color: #36007D;
+        }
+
+        .monseu {
+            width: 100px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome, <%= user %>!</h1>
-        <p>Anda telah berhasil masuk sebagai admin.</p>
-        <a href="/auth/logout" class="btn btn-danger">Logout</a>
+        <div class="card">
+            <div class="card-header">
+                <img src="monseu.png" alt="Monseu" class="monseu">
+                <div class="button-group">
+                    <span class="btn-home">Home</span>
+                    <a href="stocks" class="btn-stock">Stock</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <h1>Monseu's Inventory</h1>
+                <br>
+                <p>Having trouble managing your inventory stock? Monseu Inventory makes it easy to track, organize, and optimize your inventory, ensuring smooth operations every day!</p>
+                <img src="inventory.jpg" alt="Inventory" class="inventory">
+                <br>
+                <p>Managing inventory can be a complex and time-consuming task, from tracking stock levels to avoiding shortages or overstock. Without a reliable system, businesses often face inefficiencies that lead to lost sales, wasted resources, and operational delays. Monseu Inventory is here to change that by providing a smarter, more efficient way to manage stock with ease.</p>
+                <p>With Monseu Inventory, you can monitor stock levels in real time, update inventory seamlessly, and generate insightful reports to help optimize your business. Our intuitive platform is designed to simplify stock management, reduce human errors, and improve overall efficiency. Whether you need to track incoming shipments, set up automatic restocking alerts, or analyze sales trends, Monseu Inventory has the tools to keep your operations running smoothly.</p>
+                <p>No matter the size of your business, having an organized inventory system is key to long-term success. Monseu Inventory empowers you with accurate data, easy-to-use features, and a seamless workflow so you can focus on growing your business. Say goodbye to stock-related headaches and take control of your inventory with Monseu Inventory today!</p>
+            </div>
+            <div class="card-footer">
+                <a href="/auth/logout" class="btn btn-success">Logout</a>
+            </div>
+        </div>
     </div>
     <script 
         src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 

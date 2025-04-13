@@ -1,5 +1,5 @@
 # MONSEU'S MINIMARKET INVENTORY PROJECT PROGRESS
-Berikut adalah laporan mengenai perkembangan pengerjaan projek kami per-tanggal **24 Maret 2025.**
+Berikut adalah laporan mengenai perkembangan pengerjaan projek kami per-tanggal **14 April 2025.**
 
 ## EJS
 Kami telah membuat EJS untuk halaman log in seperti berikut.
@@ -12,7 +12,7 @@ Pada halaman ini sudah bisa memasukkan username Admin dan password Admin.
 
 * Halaman Home
 ![Halaman Home](Home.png)
-kami juga sudah sedikit menghias halaman log in menggunakan tema warna yang kamu tentukan yaitu ungu yang merupakan warna identitas kelompok kami. Kamu gunakan kode CSS langsung pada file EJS.
+Ini adalah halaman log in, menggunakan tema warna yang kami tentukan yaitu ungu yang merupakan warna identitas kelompok kami. Kami gunakan kode CSS langsung pada file EJS.
 
 ## Halaman Home
 Kami juga telah membuat halaman Home dan Stok untuk Admin yang dapat menambahkan stok produk dan juga menambahkan produk baru pada etalase.
